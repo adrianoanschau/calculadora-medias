@@ -1,0 +1,114 @@
+
+        :root {
+            --bg-color: #1a1e23;
+            --container-bg: #21272d;
+            --text-color: #f3f4f6;
+            --accent-color: #27ae60;
+            --border-color: #3e444e;
+            --code-bg: #0d1117;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .challenge-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            background-color: #2d333b;
+            padding: 15px 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        .description {
+            padding: 25px;
+            line-height: 1.6;
+        }
+
+        .problem-statement {
+            background: #2d333b;
+            padding: 15px;
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .editor-section {
+            padding: 25px;
+            background-color: var(--code-bg);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #8b949e;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            background: #161b22;
+            border: 1px solid var(--border-color);
+            color: white;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background: #161b22;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            min-height: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .hint {
+            font-size: 0.9rem;
+            color: #e67e22;
+            margin-top: 10px;
+            font-style: italic;
+        }

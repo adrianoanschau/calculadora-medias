@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRank Style - Desafio das Médias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="challenge-container">
+    <div class="header">
+        <h1>Desafio 1: A Calculadora de Médias</h1>
+    </div>
+
+    <div class="description">
+        <div class="problem-statement">
+            <p><strong>Objetivo:</strong> Capture 4 notas bimestrais, armazene-as em variáveis e calcule a média final.</p>
+            <p><strong>Atenção:</strong> Cuidado com a precedência de operadores matemáticos ao realizar a divisão!</p>
+        </div>
+
+        <div class="input-group">
+            <div>
+                <label>Nota 1 (N1)</label>
+                <input type="number" id="n1" placeholder="Ex: 7.5" step="0.1">
+            </div>
+            <div>
+                <label>Nota 2 (N2)</label>
+                <input type="number" id="n2" placeholder="Ex: 8.0" step="0.1">
+            </div>
+            <div>
+                <label>Nota 3 (N3)</label>
+                <input type="number" id="n3" placeholder="Ex: 6.0" step="0.1">
+            </div>
+            <div>
+                <label>Nota 4 (N4)</label>
+                <input type="number" id="n4" placeholder="Ex: 9.5" step="0.1">
+            </div>
+        </div>
+
+        <button onclick="resolverDesafio()">Executar Código (Run Code)</button>
+
+        <div id="output">
+            <span>// O resultado aparecerá aqui...</span>
+        </div>
+
+        <p class="hint">Dica: Lembre-se que o computador resolve divisões antes de somas, a menos que você use parênteses.</p>
+    </div>
+
+    <div class="editor-section">
+        <label>Console de Saída</label>
+        </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
